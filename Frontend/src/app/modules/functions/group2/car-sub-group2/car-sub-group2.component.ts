@@ -12,29 +12,24 @@ import * as moment from 'moment';
 export class CarSubGroup2Component extends AppComponentBase implements OnInit {
 
     currentUserName : string;
+    xeSearch : Group2SearchDto = new Group2SearchDto();
+    xeThanhLy : Group2ThanhLyDto = new Group2ThanhLyDto();
 
     constructor(injector: Injector, private group2ThanhLyService: Group2ThanhLyServiceProxy) {
         super(injector);
         this.currentUserName = this.appSession.user.userName;
     }
 
-    xeInput: {}
-
     ngOnInit() {
         this.search();
     }
 
-    xeSearch : Group2SearchDto = new Group2SearchDto();
-    xeThanhLy : Group2ThanhLyDto = new Group2ThanhLyDto(
-    );
-
     search() {
-        this.group2ThanhLyService.tHANHLY_Group2Search(2)
+        this.group2ThanhLyService.tHANHLY_Group2Search(1)
         .subscribe((result) => {
             this.xeSearch = result;
         });
     }
-
 
     thanhLy() {
         this.message.confirm(
@@ -49,12 +44,12 @@ export class CarSubGroup2Component extends AppComponentBase implements OnInit {
     }
 
     xacNhan() {
-        this.xeThanhLy.thanhLy_MaXe = this.xeSearch.ma;
+        this.xeThanhLy.thanhLy_MaXe = 1;
         this.xeThanhLy.thanhLy_NguoiTao = this.currentUserName;
         this.xeThanhLy.thanhLy_NgayTao = moment();
         this.group2ThanhLyService.tHANHLY_Group2ThanhLy(this.xeThanhLy)
         .subscribe((result) => {
-         
+            
         })
     }
 

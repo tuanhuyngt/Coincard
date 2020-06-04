@@ -13,6 +13,7 @@ Backend/src/GSoft.AbpZeroTemplate.Web.Host/appsettings.json
 # dependencies
 /node_modules
 /bower_components
+Frontend/node_modules
 
 # IDEs and editors
 /.idea
@@ -41,6 +42,7 @@ testem.log
 #System Files
 .DS_Store
 Thumbs.db
+.vscode/
 
 # VS files
 /AbpZeroTemplate.AngularUI.csproj.user

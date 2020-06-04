@@ -26,41 +26,41 @@
                           </div>
                           <div class="form-group">
                               <label>Tên hãng xe</label>
-                              <input class="form-control" name="Xe_TenHangXe" [(ngModel)]="xeSearch.xe_TenHangXe"
+                              <input class="form-control" name="Xe_TenHangXe" [(ngModel)]="xeSearch.loaiXe_Hang"
                                   disabled>
                           </div>
                           <div class="form-group">
                               <label>Năm san xuất</label>
-                              <input class="form-control" name="Xe_NamSanXuat" [(ngModel)]="xeInput.Xe_NamSanXuat"
+                              <input class="form-control" name="Xe_NamSanXuat" [(ngModel)]="xeSearch.loaiXe_NamSX"
                                   disabled>
                           </div>
                           <div class="form-group">
                               <label>Màu xe</label>
-                              <input class="form-control" name="Xe_Mau" [(ngModel)]="xeInput.Xe_Mau" disabled>
+                              <input class="form-control" name="Xe_Mau" [(ngModel)]="xeSearch.xe_Mau" disabled>
                           </div>
                           <div class="form-group">
                               <label>Giá</label>
-                              <input class="form-control" name="Xe_Gia" [(ngModel)]="xeInput.Xe_Gia" disabled>
+                              <input class="form-control" name="Xe_Gia" [(ngModel)]="xeSearch.xe_Gia" disabled>
                           </div>
                           <div class="form-group">
                               <label>Đinh muc nhiên liêu (Lít/1000km)</label>
-                              <input class="form-control" name="Xe_DinhMucNhienLieu"
-                                  [(ngModel)]="xeInput.Xe_DinhMucNhienLieu" disabled>
+                              <input class="form-control" name="loaiXe_DinhMucNhienLieu"
+                                  [(ngModel)]="xeSearch.loaiXe_DinhMucNhienLieu" disabled>
                           </div>
                       </div>
 
                       <div class="col-md-6">
                           <div class="form-group">
                               <label>Lý do thanh lý</label>
-                              <textarea class="form-control" name ="ThanhLy_LyDo" rows="6" [(ngModel)]="xeThanhLy.ThanhLy_LyDo" ></textarea>
+                              <textarea class="form-control" name ="thanhLy_LyDo" rows="6" [(ngModel)]="xeThanhLy.thanhLy_LyDo" ></textarea>
                           </div>
                           <div class="form-group">
                               <label>Nguoi mua</label>
-                              <input class="form-control" name="ThanhLy_NguoiMua" [(ngModel)]="xeThanhLy.ThanhLy_NguoiMua">
+                              <input class="form-control" name="thanhLy_NguoiMua" [(ngModel)]="xeThanhLy.thanhLy_NguoiMua">
                           </div>
                           <div class="form-group">
                               <label>Sô tiên thanh lý</label>
-                              <input class="form-control" name="xe_Ten" [(ngModel)]="thanhLy_SoTien">
+                              <input class="form-control" name="thanhLy_SoTien" [(ngModel)]="xeThanhLy.thanhLy_SoTien">
                           </div>
                       </div>
 
